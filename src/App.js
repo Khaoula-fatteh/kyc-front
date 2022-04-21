@@ -10,7 +10,7 @@ import NoMatch from './Dashboard/views/Meeting/NoMatch/NoMatch';
 import CallPage from './Dashboard/views/Meeting/CallPage/CallPage'
 import HomeCallPage from './Dashboard/views/Meeting/HomeCallPage/HomeCallPage'
 import EmailVerify from './Dashboard/views/EmailVerify/EmailVerify';
-
+import RegisterClients from './Dashboard/views/Clients/RegisterClients';
 import {
   BrowserRouter as Router,
   Routes, Route, Navigate
@@ -30,6 +30,8 @@ function App() {
           <Route exact path='/' element={<Home/>} />
           <Route exact path='/getproviders' element={<GetAllProviders/>} />
           <Route exact path='/updateProvider' element={<UpdateProviders/>}/>
+          <Route exact path='/registerClient' element={<RegisterClients/>}/>
+
           {/* <Route exact path='/callpage/:id' element={<CallPage />} />
           <Route exact path='/homecallpage' element={<HomeCallPage />} />
           <Route exact path='*' element={<NoMatch />} /> */}
